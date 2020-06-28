@@ -9,7 +9,12 @@ class Waiter
     @yrs_experience = yrs_experience
     @@all << self
   end
- 
+ def meals
+  Meal.all.select do |meal|
+    meal.customer == self
+  end
+end
+
   def self.all
     @@all
   end
