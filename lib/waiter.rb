@@ -23,7 +23,7 @@ def waiters
     meal_a.tip <=> meal_b.tip
   end
  
-  best_tipped_meal.customer
+  # best_tipped_meal.customer
 end
   def self.all
     @@all
