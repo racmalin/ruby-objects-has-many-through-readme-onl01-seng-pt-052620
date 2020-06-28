@@ -9,7 +9,7 @@ class Waiter
     @yrs_experience = yrs_experience
     @@all << self
   end
- def new_meal(waiter, total,tip=0)
+ def new_meal(waiter, total, tip=0)
    Meal.new(waiter, self, total, tip)
  end
   def self.all
